@@ -1,0 +1,70 @@
+.person__page{
+    box-sizing: border-box;
+    width: 78%;
+    background-color: #fff;
+    padding: 20px 0 0 50px;
+    &-title{
+        font-size: 24px;
+        font-weight: 700;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    &-form{
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+        width: 80%;
+        box-sizing: border-box;
+        padding: 7px 20px 20px 20px;
+    }
+    &-input__title{
+        font-weight: 400;
+        margin-bottom: 5px;
+        margin-top: 13px;
+    }
+    &-input{
+        border-radius: 8px;
+        width: 40%;
+        padding: 9px 13px;
+        font-weight: 500;
+    }
+    &-input__disable{
+        border: 1px solid #D8D8D8;
+        border-radius: 8px;
+        width: 40%;
+        padding: 9px 13px;
+        font-weight: 500;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    &-comment{
+        width: 95%;
+        height: 60px;
+        border: 1px solid #D8D8D8;
+        border-radius: 8px;
+        padding: 5px 5px;
+        resize: none;
+
+    }
+    &-button__container{
+        width: 80%;
+        display: flex;
+        justify-content: end;
+        padding: 15px 0;
+    }
+    &-title__container{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    &-button{
+        right: 0;
+        border-radius: 5px;
+        color: #fff;
+        border: 0;
+        padding: 8px 24px;
+        margin-bottom: 9px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

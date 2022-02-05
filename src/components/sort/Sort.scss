@@ -1,0 +1,35 @@
+.sort{
+    box-sizing: border-box;
+    width: 22%;
+    height: 100vh;
+    display: inline-block;
+    &__inner{
+        box-sizing: border-box;
+        position: fixed;
+        background-color:#BDBDBD;
+        padding: 20px 0 0 40px;
+        width: 22%;
+        height: 100vh;
+   }
+    &__title{
+        font-size: 24px;
+        font-weight: 400px;
+        margin-bottom: 8px;
+    }
+    &__button{
+        display: block;
+        border-radius: 5px;
+        background-color: #4B51EF;
+        color: #fff;
+        border: 0;
+        padding: 6px 22px;
+        margin-bottom: 9px;
+        font-size: 18px;
+        cursor: pointer;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+}
+

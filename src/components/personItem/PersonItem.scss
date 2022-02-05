@@ -1,0 +1,23 @@
+.person__item{
+    position: relative;
+    padding: 15px 0 15px 15px;
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    width: 80%;
+    margin-bottom: 20px;
+    &-one{
+        color:#A3A3A3;
+        display: inline-block;
+        margin-top: 10px;
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+    &-details{
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        color: #4B51EF;
+        cursor: pointer;
+    }
+}
