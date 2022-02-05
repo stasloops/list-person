@@ -8,8 +8,6 @@ interface PersonItemProps {
 }
 
 const PersonItem:FC <PersonItemProps> = ({item}) => {
-  console.log(item);
-  
   return(
         <div className='person__item'>
             <span className='person__item-one'>ФИО:</span><span className='person__item-two'> {item.name}</span><br/>

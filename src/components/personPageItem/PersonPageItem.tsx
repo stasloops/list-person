@@ -7,12 +7,9 @@ interface PersonPageItemProps{
     item: IUsers;
     disable: boolean;
     send: boolean
-
 }
 
 const PersonPageItem:FC<PersonPageItemProps> = ({setErrorInput, item, disable, send}) => {
- console.log(item);
-
  const name = useInput(item.name)
  const username = useInput(item.username)
  const email = useInput(item.email)
@@ -54,7 +51,6 @@ useEffect(() => {
     valueName()
     console.log(JSON.stringify(newItem));
   }, [send]);
-
 
   const placeholder = {
     name: 'Ivan Ivanov', username: 'Ivan',

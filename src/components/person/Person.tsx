@@ -9,8 +9,6 @@ interface PersonProps {
 }
 
 const Person:FC<PersonProps> = ({users, loading}) => {
-  console.log(users);
-  
   return( 
   <div>
     <div className='person'>
@@ -26,7 +24,6 @@ const Person:FC<PersonProps> = ({users, loading}) => {
                 <PersonItem key={`${item.id}_${item.name}`} item={item}/>
             ))
         }
-           
         </div>
     </div>
   </div>

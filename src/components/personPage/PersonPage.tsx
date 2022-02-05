@@ -11,7 +11,6 @@ const PersonPage:FC<PeronPageProps> = ({itemPage}) => {
   const [disable, setDisable] = useState<boolean>(true);
   const [errorInput, setErrorInput] = useState<boolean>(false)
   const [send, setSend] = useState<boolean>(false);
-console.log(itemPage);
 
   const disableFalse = () => {
     setDisable(false)
@@ -29,7 +28,6 @@ console.log(itemPage);
         Изменить
       </button>
      </div>
-     
      <form className='person__page-form'>
        <PersonPageItem send={send} setErrorInput={setErrorInput} disable={disable} item={itemPage}/>
        <div className='person__page-input__title'>

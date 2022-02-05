@@ -5,8 +5,10 @@ interface SortProps {
   setStatus: (string: string) => void
   
 }
+
 const Sort: FC<SortProps> = ({setStatus}) => {
   const [filter, setFilter] = useState<string>('');
+
   useEffect(() => {
     setStatus(filter)
   }, [filter]);
@@ -17,6 +19,7 @@ const Sort: FC<SortProps> = ({setStatus}) => {
   const cityFilter = () => {
     setFilter('city')
   }
+  
   return (
   <div className='sort'>
     <div className='sort__inner'>
