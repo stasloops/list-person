@@ -1,13 +1,16 @@
 import React, { FC } from 'react';
 import PersonItem from '../personItem/PersonItem';
 import './Person.scss'
+import { IUsers } from '../../types/users';
 
 interface PersonProps {
-  users: any[];
+  users:  IUsers[];
   loading: boolean;
 }
 
 const Person:FC<PersonProps> = ({users, loading}) => {
+  console.log(users);
+  
   return( 
   <div>
     <div className='person'>

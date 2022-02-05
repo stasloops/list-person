@@ -1,13 +1,17 @@
 import React, { FC, useState } from 'react';
 import PersonPageItem from '../personPageItem/PersonPageItem';
 import './PersonPage.scss'
+import { IUsers } from '../../types/users';
+
 interface PeronPageProps {
-  itemPage: any;
+  itemPage: IUsers;
 }
+
 const PersonPage:FC<PeronPageProps> = ({itemPage}) => {
   const [disable, setDisable] = useState<boolean>(true);
   const [errorInput, setErrorInput] = useState<boolean>(false)
   const [send, setSend] = useState<boolean>(false);
+console.log(itemPage);
 
   const disableFalse = () => {
     setDisable(false)

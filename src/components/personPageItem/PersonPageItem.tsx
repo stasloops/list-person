@@ -1,9 +1,10 @@
 import React, { FC, useEffect, useState } from 'react'
 import { useInput } from '../../hooks/useInput';
+import { IUsers, IUsersInput } from '../../types/users';
 
 interface PersonPageItemProps{
     setErrorInput: (boolean: boolean) => void;
-    item: any;
+    item: IUsers;
     disable: boolean;
     send: boolean
 
@@ -32,7 +33,7 @@ useEffect(() => {
     city.error || zipcode.error ||
     phone.error || website.error]);
 
- const [newItem, setNewItem] = useState({name: '', username: '', email: '', 
+ const [newItem, setNewItem] = useState<IUsersInput>({name: '', username: '', email: '', 
                                          address: {street: '', city: '',  zipcode: ''}, 
                                          phone: '', website: ''})
   useEffect(() => {

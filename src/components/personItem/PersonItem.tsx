@@ -1,12 +1,15 @@
 import React, { FC } from 'react';
-import './PersonItem.scss'
+import './PersonItem.scss';
 import { Link } from "react-router-dom";
+import { IUsers } from '../../types/users';
 
 interface PersonItemProps {
-  item: any
+  item: IUsers;
 }
 
 const PersonItem:FC <PersonItemProps> = ({item}) => {
+  console.log(item);
+  
   return(
         <div className='person__item'>
             <span className='person__item-one'>ФИО:</span><span className='person__item-two'> {item.name}</span><br/>
