@@ -17,16 +17,11 @@ const PersonList: FC = () => {
     axios.get<IUsers[]>(`https://jsonplaceholder.typicode.com/users`)
         .then((response) => {
           setUsers(response.data)
+          setUsersPage(response.data)
           setLoading(false)
         })
-  }, []);
-  useEffect(() => {
-    axios.get<IUsers[]>(`https://jsonplaceholder.typicode.com/users`)
-        .then((response) => {
-          setUsersPage(response.data)
-        })
-  }, []);
-
+  }, []); 
+  
 if(status){
   status === 'name' ?  
       users.sort(function(a, b){
